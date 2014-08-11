@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./gspiceui
+gspiceui
