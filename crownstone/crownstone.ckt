@@ -9,14 +9,14 @@
 .INCLUDE crownstone.cmd
 
 * Component Definitions
-C1 vac1 Vbb 330n
-C2 vac2 1 330n
-C3 dc 0 1000u
+C1 vac1 Vbb 440n
+C2 vac2 1 440n
+C3 dc 0 47u
 D1 0 Vbb 1N4007
 D2 Vbb dc 1N4007
 D3 0 1 1N4007
 D4 1 dc 1N4007
-Rload 0 dc 1k
+Rload 0 dc 1000
 Rspice vac2 Vbb 1G
 V1 vac1 vac2 sin(0 678.82 50)
 
@@ -25,7 +25,7 @@ V1 vac1 vac2 sin(0 678.82 50)
 
 * NG-Spice Simulation Commands
 .OPTIONS NOPAGE NUMDGT=6 UNITS=Degrees WIDTH=104
-.PRINT TRAN V(dc)-0
+.PRINT TRAN 0-V(dc) V(dc)
 .TRAN 1.00m 100.00m 0.00m
 
 .END

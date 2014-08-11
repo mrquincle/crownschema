@@ -12,6 +12,8 @@ By default `ngspiceui` comes with `gwave` as a dependency, however that program 
 
 Thankfully, `ngspiceui` allows the user to set in `Settings | Preferences | Waveform viewer` a different viewer: `Gaw`. This viewer can be downloaded from [its creator](http://www.rvq.fr/php/ndl.php?id=gaw.?-.*).
 
+
+
 ## Copyrights
 
 * Author: Anne van Rossum

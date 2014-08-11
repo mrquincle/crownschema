@@ -9,7 +9,7 @@ refdes=C1
 T 2900 8300 5 10 0 0 0 0 1
 symversion=0.1
 T 2700 7400 5 10 1 1 0 0 1
-value=330n
+value=440n
 }
 C 5100 6600 1 90 0 diode-1.sym
 {
@@ -137,7 +137,7 @@ device=RESISTOR
 T 10700 6100 5 10 1 1 90 0 1
 refdes=Rload
 T 11000 5900 5 10 1 1 0 0 1
-value=1k
+value=1000
 }
 N 10900 7600 10900 6800 4
 C 9000 6600 1 270 0 capacitor-4.sym
@@ -149,7 +149,7 @@ refdes=C3
 T 9700 6400 5 10 0 0 270 0 1
 symversion=0.1
 T 9000 6600 5 10 1 1 0 0 1
-value=1000u
+value=47u
 }
 C 200 8400 1 0 0 spice-include-1.sym
 {
@@ -169,7 +169,7 @@ refdes=C2
 T 3000 5800 5 10 0 0 0 0 1
 symversion=0.1
 T 2800 4900 5 10 1 1 0 0 1
-value=330n
+value=440n
 }
 C 3900 5900 1 90 0 resistor-1.sym
 {
@@ -189,3 +189,14 @@ netname=vac1
 N 1800 7600 2700 7600 4
 N 2600 5100 2600 5900 4
 N 3800 5900 2600 5900 4
+C 10400 5700 1 90 0 zener-1.sym
+{
+T 9800 6100 5 10 0 0 90 0 1
+device=ZENER_DIODE
+T 9900 6000 5 10 1 1 90 0 1
+refdes=Z1
+T 10400 5700 5 10 1 0 0 0 1
+value=20
+}
+N 10200 6600 10200 7600 4
+N 10200 5700 10200 5000 4
